@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tLM-DQ-Qf5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--WebChat-->
+        <scene sceneID="JrF-hW-6v0">
+            <objects>
+                <viewController id="w6o-O8-WWo" customClass="ChatWeb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYa-mL-Y1y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTd-xu-Edk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iTd-xu-Edk" firstAttribute="bottom" secondItem="7ZE-XR-zhK" secondAttribute="bottom" id="BAM-ME-c6g"/>
+                            <constraint firstItem="iTd-xu-Edk" firstAttribute="top" secondItem="7ZE-XR-zhK" secondAttribute="top" id="FzH-5Q-zq6"/>
+                            <constraint firstItem="iTd-xu-Edk" firstAttribute="trailing" secondItem="7ZE-XR-zhK" secondAttribute="trailing" id="KWu-na-49B"/>
+                            <constraint firstItem="iTd-xu-Edk" firstAttribute="leading" secondItem="7ZE-XR-zhK" secondAttribute="leading" id="Slv-xv-GoJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7ZE-XR-zhK"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WebChat" id="OAo-ZF-NZ7">
+                        <barButtonItem key="leftBarButtonItem" title="Fechar" id="UBo-di-0C4">
+                            <connections>
+                                <action selector="actBtnFechar:" destination="w6o-O8-WWo" id="ZlB-hP-V7Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="WebChat" destination="iTd-xu-Edk" id="M8y-MY-4zS"/>
+                        <outlet property="btnFechar" destination="UBo-di-0C4" id="2Ca-hp-AK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dPu-LQ-Ds2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3226.4000000000001" y="32.833583208395808"/>
+        </scene>
+        <!--Chat Iniciar Permissoes-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ChatIniciarPermissoes" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0z-2k-EwN">
+                                <rect key="frame" x="112.5" y="308.5" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Fl-Cg-svb"/>
+                                    <constraint firstAttribute="width" constant="150" id="KAF-Ip-E8V"/>
+                                </constraints>
+                                <state key="normal" title="Iniciar Atendimento">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actIniciarAtendimento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pB8-Vj-Hab"/>
+                                    <segue destination="FcB-c9-f3I" kind="presentation" id="dz5-tq-0pB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="d0z-2k-EwN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Hr-08-PLH"/>
+                            <constraint firstItem="d0z-2k-EwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nyr-JT-GSg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="PFI-Ay-ZDT"/>
+                    <connections>
+                        <outlet property="btnIniciarAtendimento" destination="d0z-2k-EwN" id="ssG-oc-Apf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608.8" y="32.833583208395808"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kEw-gv-fFD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tLM-DQ-Qf5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sr6-k9-VhT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nTm-hT-MDy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sMi-Is-RJH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="665" y="33"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xCq-aW-QHd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FcB-c9-f3I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qGY-3l-l1u">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="w6o-O8-WWo" kind="relationship" relationship="rootViewController" id="sX1-FU-oew"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eih-S5-Pav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2287.1999999999998" y="32.833583208395808"/>
+        </scene>
+    </scenes>
+</document>

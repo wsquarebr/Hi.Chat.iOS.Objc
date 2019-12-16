@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		871CDC5123A2B848003E71D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871CDC4F23A2B848003E71D9 /* Main.storyboard */; };
+		871CDC5623A2B84B003E71D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */; };
+		871CDC8623A2C620003E71D9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871CDC8523A2C620003E71D9 /* WebKit.framework */; };
+		8761CD5C23A7ED890094FA01 /* ChatWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761CD5223A7ED880094FA01 /* ChatWeb.m */; };
+		8761CD5D23A7ED890094FA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8761CD5323A7ED880094FA01 /* Assets.xcassets */; };
+		8761CD5E23A7ED890094FA01 /* ChatIniciarPermissoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761CD5423A7ED880094FA01 /* ChatIniciarPermissoes.m */; };
+		8761CD6023A7ED890094FA01 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761CD5623A7ED890094FA01 /* AppDelegate.m */; };
+		8761CD6123A7ED890094FA01 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761CD5723A7ED890094FA01 /* main.m */; };
+		8761CD6323A7EF2A0094FA01 /* Chat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8761CD5023A7ED880094FA01 /* Chat.plist */; };
+		87A8A37E23A3D49600EBD82A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A8A37D23A3D49600EBD82A /* AudioToolbox.framework */; };
+		87A8A38023A3D49F00EBD82A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A8A37F23A3D49F00EBD82A /* ExternalAccessory.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		871CDC4623A2B848003E71D9 /* HiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		871CDC5023A2B848003E71D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		871CDC5523A2B84B003E71D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		871CDC8523A2C620003E71D9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		8761CD5023A7ED880094FA01 /* Chat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Chat.plist; sourceTree = "<group>"; };
+		8761CD5123A7ED880094FA01 /* ChatWeb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatWeb.h; sourceTree = "<group>"; };
+		8761CD5223A7ED880094FA01 /* ChatWeb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatWeb.m; sourceTree = "<group>"; };
+		8761CD5323A7ED880094FA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8761CD5423A7ED880094FA01 /* ChatIniciarPermissoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatIniciarPermissoes.m; sourceTree = "<group>"; };
+		8761CD5523A7ED880094FA01 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8761CD5623A7ED890094FA01 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8761CD5723A7ED890094FA01 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8761CD5823A7ED890094FA01 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8761CD5923A7ED890094FA01 /* ChatIniciarPermissoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatIniciarPermissoes.h; sourceTree = "<group>"; };
+		87A8A37D23A3D49600EBD82A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		87A8A37F23A3D49F00EBD82A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		871CDC4323A2B848003E71D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A8A38023A3D49F00EBD82A /* ExternalAccessory.framework in Frameworks */,
+				871CDC8623A2C620003E71D9 /* WebKit.framework in Frameworks */,
+				87A8A37E23A3D49600EBD82A /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		871CDC3D23A2B848003E71D9 = {
+			isa = PBXGroup;
+			children = (
+				871CDC4823A2B848003E71D9 /* HiChat */,
+				871CDC4723A2B848003E71D9 /* Products */,
+				871CDC8423A2C620003E71D9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		871CDC4723A2B848003E71D9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				871CDC4623A2B848003E71D9 /* HiChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		871CDC4823A2B848003E71D9 /* HiChat */ = {
+			isa = PBXGroup;
+			children = (
+				8761CD5823A7ED890094FA01 /* AppDelegate.h */,
+				8761CD5623A7ED890094FA01 /* AppDelegate.m */,
+				8761CD5323A7ED880094FA01 /* Assets.xcassets */,
+				8761CD5923A7ED890094FA01 /* ChatIniciarPermissoes.h */,
+				8761CD5423A7ED880094FA01 /* ChatIniciarPermissoes.m */,
+				8761CD5123A7ED880094FA01 /* ChatWeb.h */,
+				8761CD5223A7ED880094FA01 /* ChatWeb.m */,
+				8761CD5023A7ED880094FA01 /* Chat.plist */,
+				8761CD5523A7ED880094FA01 /* Info.plist */,
+				8761CD5723A7ED890094FA01 /* main.m */,
+				871CDC4F23A2B848003E71D9 /* Main.storyboard */,
+				871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */,
+			);
+			path = HiChat;
+			sourceTree = "<group>";
+		};
+		871CDC8423A2C620003E71D9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A8A37F23A3D49F00EBD82A /* ExternalAccessory.framework */,
+				87A8A37D23A3D49600EBD82A /* AudioToolbox.framework */,
+				871CDC8523A2C620003E71D9 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		871CDC4523A2B848003E71D9 /* HiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 871CDC5C23A2B84B003E71D9 /* Build configuration list for PBXNativeTarget "HiChat" */;
+			buildPhases = (
+				871CDC4223A2B848003E71D9 /* Sources */,
+				871CDC4323A2B848003E71D9 /* Frameworks */,
+				871CDC4423A2B848003E71D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HiChat;
+			productName = HiChat;
+			productReference = 871CDC4623A2B848003E71D9 /* HiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		871CDC3E23A2B848003E71D9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Enzo Augusto";
+				TargetAttributes = {
+					871CDC4523A2B848003E71D9 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 871CDC4123A2B848003E71D9 /* Build configuration list for PBXProject "HiChat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 871CDC3D23A2B848003E71D9;
+			productRefGroup = 871CDC4723A2B848003E71D9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				871CDC4523A2B848003E71D9 /* HiChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		871CDC4423A2B848003E71D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8761CD6323A7EF2A0094FA01 /* Chat.plist in Resources */,
+				871CDC5623A2B84B003E71D9 /* LaunchScreen.storyboard in Resources */,
+				8761CD5D23A7ED890094FA01 /* Assets.xcassets in Resources */,
+				871CDC5123A2B848003E71D9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		871CDC4223A2B848003E71D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8761CD5E23A7ED890094FA01 /* ChatIniciarPermissoes.m in Sources */,
+				8761CD5C23A7ED890094FA01 /* ChatWeb.m in Sources */,
+				8761CD6123A7ED890094FA01 /* main.m in Sources */,
+				8761CD6023A7ED890094FA01 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		871CDC4F23A2B848003E71D9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				871CDC5023A2B848003E71D9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				871CDC5523A2B84B003E71D9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		871CDC5A23A2B84B003E71D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		871CDC5B23A2B84B003E71D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		871CDC5D23A2B84B003E71D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HiChat/HiChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVYK47742B;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiplataform.chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiChat/Constantes/HiChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		871CDC5E23A2B84B003E71D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = HiChat/HiChat.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BVYK47742B;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = HiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hiplataform.chat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HiChat/Constantes/HiChat-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		871CDC4123A2B848003E71D9 /* Build configuration list for PBXProject "HiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871CDC5A23A2B84B003E71D9 /* Debug */,
+				871CDC5B23A2B84B003E71D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		871CDC5C23A2B84B003E71D9 /* Build configuration list for PBXNativeTarget "HiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				871CDC5D23A2B84B003E71D9 /* Debug */,
+				871CDC5E23A2B84B003E71D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 871CDC3E23A2B848003E71D9 /* Project object */;
+}
