@@ -52,7 +52,7 @@
             </objects>
             <point key="canvasLocation" x="3055" y="33"/>
         </scene>
-        <!--Chat Iniciar Permissoes-->
+        <!--Chat-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ChatIniciarPermissoes" sceneMemberID="viewController">
@@ -60,37 +60,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0z-2k-EwN">
-                                <rect key="frame" x="112.5" y="308.5" width="150" height="50"/>
-                                <color key="backgroundColor" red="0.0" green="0.70588235294117641" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0p-Gk-dWf">
+                                <rect key="frame" x="97.5" y="316.5" width="180" height="34"/>
+                                <color key="backgroundColor" red="0.0" green="0.70588235290000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="2Fl-Cg-svb"/>
-                                    <constraint firstAttribute="width" constant="150" id="KAF-Ip-E8V"/>
+                                    <constraint firstAttribute="width" constant="180" id="9dx-W7-guP"/>
                                 </constraints>
                                 <state key="normal" title="Iniciar Atendimento">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
-                                        <integer key="value" value="20"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" red="0.0" green="0.70588235290000001" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="actIniciarAtendimento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfm-yi-DZG"/>
+                                    <action selector="actIniciarAtendimento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8Z-5Q-Wld"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="d0z-2k-EwN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0Hr-08-PLH"/>
-                            <constraint firstItem="d0z-2k-EwN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nyr-JT-GSg"/>
+                            <constraint firstItem="q0p-Gk-dWf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nmy-DS-mn7"/>
+                            <constraint firstItem="q0p-Gk-dWf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XJe-Ic-ioa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PFI-Ay-ZDT"/>
-                    <connections>
-                        <outlet property="btnIniciarAtendimento" destination="d0z-2k-EwN" id="ssG-oc-Apf"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Chat" id="PFI-Ay-ZDT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +115,6 @@
         <!--Navigation Controller-->
         <scene sceneID="xCq-aW-QHd">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eih-S5-Pav" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController storyboardIdentifier="ChatWebNav" automaticallyAdjustsScrollViewInsets="NO" id="FcB-c9-f3I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qGY-3l-l1u">
@@ -129,6 +126,7 @@
                         <segue destination="w6o-O8-WWo" kind="relationship" relationship="rootViewController" id="sX1-FU-oew"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eih-S5-Pav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2362" y="33"/>
         </scene>

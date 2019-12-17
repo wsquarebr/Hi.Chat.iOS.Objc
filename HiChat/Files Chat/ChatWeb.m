@@ -44,8 +44,6 @@
     if ([self requestIsDownloadable:navigationAction.request])
     {
         [[UIApplication sharedApplication] openURL:navigationAction.request.URL];
-
-        //decisionHandler(WKNavigationActionPolicyCancel);
     }
 
     decisionHandler(WKNavigationActionPolicyAllow);
@@ -56,15 +54,28 @@
     NSString *requestString = [[request URL] absoluteString];
     NSString *fileType = [requestString pathExtension];
     NSLog(@"FileType: %@", fileType);
-    BOOL isDownloadable = (
-                            ([fileType caseInsensitiveCompare:@"zip"] == NSOrderedSame) ||
-                            ([fileType caseInsensitiveCompare:@"rar"] == NSOrderedSame) ||
-                            ([fileType caseInsensitiveCompare:@"jpeg"] == NSOrderedSame) ||
-                            ([fileType caseInsensitiveCompare:@"pdf"] == NSOrderedSame) ||
-                            ([fileType caseInsensitiveCompare:@"docx"] == NSOrderedSame) ||
-                            ([fileType caseInsensitiveCompare:@"jpg"] == NSOrderedSame) ||
-                            ([fileType caseInsensitiveCompare:@"png"] == NSOrderedSame)
-                            );
+    BOOL isDownloadable = (([fileType caseInsensitiveCompare:@"txt"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"doc"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"docx"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"ppt"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"pps"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"pdf"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"xls"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"xlsx"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"html"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"json"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"jpeg"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"jpg"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"png"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"gif"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"mp3"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"avi"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"mid"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"mpg"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"mp4"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"zip"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"rar"] == NSOrderedSame) ||
+                           ([fileType caseInsensitiveCompare:@"gif"] == NSOrderedSame));
     
     return isDownloadable;
 }
