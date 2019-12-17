@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnIniciarAtendimento;
 
 - (IBAction)actIniciarAtendimento:(UIButton *)sender;
+- (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^)(void))completion;
 
 @end
 

@@ -16,12 +16,12 @@
 
 @implementation ChatWeb
 
-
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.WebChat setNavigationDelegate:self];
     
     // Read plist from bundle and get Root Dictionary out of it
     NSDictionary *dictRoot = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Chat" ofType:@"plist"]];
@@ -35,27 +35,20 @@
         // Fetch Single Item
         // Here obj will return a dictionary
         NSString *Url= ((void)(@"Url : %@"),[obj valueForKey:@"BotUrl"]);
-        self->_WebChat.delegate = self;
-        [self->_WebChat loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:Url]]];
+        [self.WebChat loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:Url]]];
     }];
-    
-    
-  
-    
 }
 
-
-- (BOOL)webView:(UIWebView *)_webChatView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+- (void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler;
 {
-    if ([self requestIsDownloadable:request])
+    if ([self requestIsDownloadable:navigationAction.request])
     {
-        [[UIApplication sharedApplication] openURL:request.URL];
-        
-        return NO;
+        [[UIApplication sharedApplication] openURL:navigationAction.request.URL];
+
+        //decisionHandler(WKNavigationActionPolicyCancel);
     }
-    
-    
-    return YES;
+
+    decisionHandler(WKNavigationActionPolicyAllow);
 }
 
 - (BOOL)requestIsDownloadable: (NSURLRequest *)request
@@ -63,7 +56,7 @@
     NSString *requestString = [[request URL] absoluteString];
     NSString *fileType = [requestString pathExtension];
     NSLog(@"FileType: %@", fileType);
-    BOOL *isDownloadable = (
+    BOOL isDownloadable = (
                             ([fileType caseInsensitiveCompare:@"zip"] == NSOrderedSame) ||
                             ([fileType caseInsensitiveCompare:@"rar"] == NSOrderedSame) ||
                             ([fileType caseInsensitiveCompare:@"jpeg"] == NSOrderedSame) ||
@@ -77,7 +70,7 @@
 }
 
 - (IBAction)actBtnFechar:(id)sender {
-    [self dismissModalViewControllerAnimated:YES];
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
+
 @end

@@ -9,13 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "WebKit/WebKit.h"
 
-@interface ChatWeb : UIViewController <UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *WebChat;
+@interface ChatWeb : UIViewController <WKNavigationDelegate>
+
+@property (weak, nonatomic) IBOutlet WKWebView *WebChat;
 
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnFechar;
 
 - (IBAction)actBtnFechar:(id)sender;
-
 
 @end
 

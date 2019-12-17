@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WebChat-->
+        <!--Chat-->
         <scene sceneID="JrF-hW-6v0">
             <objects>
                 <viewController id="w6o-O8-WWo" customClass="ChatWeb" sceneMemberID="viewController">
@@ -18,21 +18,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iTd-xu-Edk">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8I-GE-dux">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </webView>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iTd-xu-Edk" firstAttribute="bottom" secondItem="7ZE-XR-zhK" secondAttribute="bottom" id="BAM-ME-c6g"/>
-                            <constraint firstItem="iTd-xu-Edk" firstAttribute="top" secondItem="7ZE-XR-zhK" secondAttribute="top" id="FzH-5Q-zq6"/>
-                            <constraint firstItem="iTd-xu-Edk" firstAttribute="trailing" secondItem="7ZE-XR-zhK" secondAttribute="trailing" id="KWu-na-49B"/>
-                            <constraint firstItem="iTd-xu-Edk" firstAttribute="leading" secondItem="7ZE-XR-zhK" secondAttribute="leading" id="Slv-xv-GoJ"/>
+                            <constraint firstItem="7ZE-XR-zhK" firstAttribute="bottom" secondItem="C8I-GE-dux" secondAttribute="bottom" id="4aR-Ja-4EK"/>
+                            <constraint firstItem="C8I-GE-dux" firstAttribute="leading" secondItem="7ZE-XR-zhK" secondAttribute="leading" id="Peh-MH-e4i"/>
+                            <constraint firstItem="C8I-GE-dux" firstAttribute="top" secondItem="7ZE-XR-zhK" secondAttribute="top" id="nLw-NB-Ek3"/>
+                            <constraint firstItem="7ZE-XR-zhK" firstAttribute="trailing" secondItem="C8I-GE-dux" secondAttribute="trailing" id="pCR-7r-c6t"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7ZE-XR-zhK"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WebChat" id="OAo-ZF-NZ7">
+                    <navigationItem key="navigationItem" title="Chat" id="OAo-ZF-NZ7">
                         <barButtonItem key="leftBarButtonItem" title="Fechar" id="UBo-di-0C4">
                             <connections>
                                 <action selector="actBtnFechar:" destination="w6o-O8-WWo" id="ZlB-hP-V7Q"/>
@@ -40,13 +44,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="WebChat" destination="iTd-xu-Edk" id="M8y-MY-4zS"/>
+                        <outlet property="WebChat" destination="C8I-GE-dux" id="G4C-en-dJ0"/>
                         <outlet property="btnFechar" destination="UBo-di-0C4" id="2Ca-hp-AK5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dPu-LQ-Ds2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3226.4000000000001" y="32.833583208395808"/>
+            <point key="canvasLocation" x="3055" y="33"/>
         </scene>
         <!--Chat Iniciar Permissoes-->
         <scene sceneID="tne-QT-ifu">
@@ -72,8 +76,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="actIniciarAtendimento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pB8-Vj-Hab"/>
-                                    <segue destination="FcB-c9-f3I" kind="presentation" id="dz5-tq-0pB"/>
+                                    <action selector="actIniciarAtendimento:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gfm-yi-DZG"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -114,7 +117,8 @@
         <!--Navigation Controller-->
         <scene sceneID="xCq-aW-QHd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FcB-c9-f3I" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eih-S5-Pav" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="ChatWebNav" automaticallyAdjustsScrollViewInsets="NO" id="FcB-c9-f3I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qGY-3l-l1u">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -125,9 +129,8 @@
                         <segue destination="w6o-O8-WWo" kind="relationship" relationship="rootViewController" id="sX1-FU-oew"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eih-S5-Pav" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2287.1999999999998" y="32.833583208395808"/>
+            <point key="canvasLocation" x="2362" y="33"/>
         </scene>
     </scenes>
 </document>

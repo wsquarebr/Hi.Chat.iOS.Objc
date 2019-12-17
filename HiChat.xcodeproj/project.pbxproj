@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		871CDC5123A2B848003E71D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871CDC4F23A2B848003E71D9 /* Main.storyboard */; };
+		871CDC5123A2B848003E71D9 /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871CDC4F23A2B848003E71D9 /* Chat.storyboard */; };
 		871CDC5623A2B84B003E71D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */; };
 		871CDC8623A2C620003E71D9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871CDC8523A2C620003E71D9 /* WebKit.framework */; };
 		8761CD5C23A7ED890094FA01 /* ChatWeb.m in Sources */ = {isa = PBXBuildFile; fileRef = 8761CD5223A7ED880094FA01 /* ChatWeb.m */; };
@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		871CDC4623A2B848003E71D9 /* HiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		871CDC5023A2B848003E71D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		871CDC5023A2B848003E71D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chat.storyboard; sourceTree = "<group>"; };
 		871CDC5523A2B84B003E71D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		871CDC8523A2C620003E71D9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		8761CD5023A7ED880094FA01 /* Chat.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Chat.plist; sourceTree = "<group>"; };
@@ -73,18 +73,9 @@
 		871CDC4823A2B848003E71D9 /* HiChat */ = {
 			isa = PBXGroup;
 			children = (
-				8761CD5823A7ED890094FA01 /* AppDelegate.h */,
-				8761CD5623A7ED890094FA01 /* AppDelegate.m */,
-				8761CD5323A7ED880094FA01 /* Assets.xcassets */,
-				8761CD5923A7ED890094FA01 /* ChatIniciarPermissoes.h */,
-				8761CD5423A7ED880094FA01 /* ChatIniciarPermissoes.m */,
-				8761CD5123A7ED880094FA01 /* ChatWeb.h */,
-				8761CD5223A7ED880094FA01 /* ChatWeb.m */,
-				8761CD5023A7ED880094FA01 /* Chat.plist */,
+				D480FC7223A93B7100259833 /* Files Chat */,
+				D480FC7123A93B3E00259833 /* Files Project */,
 				8761CD5523A7ED880094FA01 /* Info.plist */,
-				8761CD5723A7ED890094FA01 /* main.m */,
-				871CDC4F23A2B848003E71D9 /* Main.storyboard */,
-				871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */,
 			);
 			path = HiChat;
 			sourceTree = "<group>";
@@ -97,6 +88,31 @@
 				871CDC8523A2C620003E71D9 /* WebKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D480FC7123A93B3E00259833 /* Files Project */ = {
+			isa = PBXGroup;
+			children = (
+				8761CD5723A7ED890094FA01 /* main.m */,
+				871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */,
+				8761CD5823A7ED890094FA01 /* AppDelegate.h */,
+				8761CD5623A7ED890094FA01 /* AppDelegate.m */,
+				8761CD5323A7ED880094FA01 /* Assets.xcassets */,
+			);
+			path = "Files Project";
+			sourceTree = "<group>";
+		};
+		D480FC7223A93B7100259833 /* Files Chat */ = {
+			isa = PBXGroup;
+			children = (
+				8761CD5923A7ED890094FA01 /* ChatIniciarPermissoes.h */,
+				8761CD5423A7ED880094FA01 /* ChatIniciarPermissoes.m */,
+				8761CD5123A7ED880094FA01 /* ChatWeb.h */,
+				8761CD5223A7ED880094FA01 /* ChatWeb.m */,
+				871CDC4F23A2B848003E71D9 /* Chat.storyboard */,
+				8761CD5023A7ED880094FA01 /* Chat.plist */,
+			);
+			path = "Files Chat";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,7 +187,7 @@
 				8761CD6323A7EF2A0094FA01 /* Chat.plist in Resources */,
 				871CDC5623A2B84B003E71D9 /* LaunchScreen.storyboard in Resources */,
 				8761CD5D23A7ED890094FA01 /* Assets.xcassets in Resources */,
-				871CDC5123A2B848003E71D9 /* Main.storyboard in Resources */,
+				871CDC5123A2B848003E71D9 /* Chat.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,12 +208,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		871CDC4F23A2B848003E71D9 /* Main.storyboard */ = {
+		871CDC4F23A2B848003E71D9 /* Chat.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				871CDC5023A2B848003E71D9 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Chat.storyboard;
 			sourceTree = "<group>";
 		};
 		871CDC5423A2B84B003E71D9 /* LaunchScreen.storyboard */ = {
